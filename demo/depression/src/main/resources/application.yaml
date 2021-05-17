@@ -1,0 +1,23 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://175.24.112.76/depression?characterEncoding=utf8
+    username: root
+    password: 123
+  web:
+    resources:
+      static-locations: file:E://images
+server:
+  port: 80
+mybatis:
+  config-location: classpath:mybatis/mybatis-config.xml
+  mapper-locations: classpath:mybatis/mapper/*.xml
+
+tx:
+  sms:
+    appId: 1400503610
+    appKey: "9b6bfdd40c63ca4953c106a4a969becd"
+    templateId: 914846
+    smsSign: "陈海龙学习使用"
+    smsEffectiveTime: "5"
+
